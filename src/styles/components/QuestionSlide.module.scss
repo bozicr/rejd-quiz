@@ -1,0 +1,56 @@
+@import 'src/styles/variablesAndMixins';
+
+.carouselItem {
+  img {
+    width: 100%;
+    height: calc(100vh - $bodyPadding * 2);
+    @include border-radius();
+  }
+
+  .homeButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: transparent;
+    border: unset;
+  }
+
+  div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: unset !important;
+    bottom: unset !important;
+    font-size: calc(20px + 1vw) !important;
+    background: $primaryColor !important;
+    padding: 20px !important;
+    opacity: unset !important;
+    p {
+      color: $black;
+      font-weight: 500;
+    }
+
+    .answer {
+      padding: 10px;
+      background: $neonGreen;
+      margin-top: 20px;
+      font-weight: 600;
+      @include border-radius();
+    }
+
+    .buttonSection {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        background: $blue;
+        border: unset;
+        padding: 5px 15px;
+        margin-top: 20px;
+        color: white;
+        @include border-radius();
+      }
+    }
+  }
+}

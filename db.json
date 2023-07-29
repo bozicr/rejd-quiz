@@ -1,0 +1,152 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "name": "Enterwell Quiz",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Who was the English mathematician and writer widely considered as the world's first computer programmer for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine?",
+          "answer": "Ada Lovelace"
+        },
+        {
+          "id": 2,
+          "question": "What country has the highest life expectancy?",
+          "answer": "Hong Kong"
+        },
+        {
+          "id": 3,
+          "question": "Where would you be if you were standing on the Spanish Steps?",
+          "answer": "Rome"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Irish pub quiz",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the most common surname in the United States?",
+          "answer": "Smith"
+        },
+        {
+          "id": 2,
+          "question": "What disease commonly spread on pirate ships?",
+          "answer": "Scurvy"
+        },
+        {
+          "id": 3,
+          "question": "Where would you be if you were standing on the Spanish Steps?",
+          "answer": "Rome"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Open day quiz",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Who was the Ancient Greek God of the Sun?",
+          "answer": "Apollo"
+        },
+        {
+          "id": 2,
+          "question": "What was the name of the crime boss who was head of the feared Chicago Outfit? ",
+          "answer": "Al Capone"
+        },
+        {
+          "id": 3,
+          "question": "What year was the United Nations established?",
+          "answer": "1945"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Donna quiz",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Who has won the most total Academy Awards?",
+          "answer": "Disney"
+        },
+        {
+          "id": 2,
+          "question": "How many minutes are in a full week? ",
+          "answer": "10080"
+        },
+        {
+          "id": 3,
+          "question": "Queen guitarist Brian May is also an expert in what scientific field? Astrophysics",
+          "answer": "Astrophysics"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Kata quiz",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Aureolin is a shade of what color?",
+          "answer": "Yellow"
+        },
+        {
+          "id": 2,
+          "question": "How many ghosts chase Pac-Man at the start of each game?",
+          "answer": "4"
+        },
+        {
+          "id": 3,
+          "question": "What Renaissance artist is buried in Rome's Pantheon?",
+          "answer": "Raphael"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Beer pong quiz",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What shoe brand makes the Mexico 66?",
+          "answer": "Onitsuka Tiger"
+        },
+        {
+          "id": 2,
+          "question": "Who was the last Tsar of Russia?",
+          "answer": "Nicholas II"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What character have both Robert Downey Jr. and Benedict Cumberbatch played? ",
+      "answer": "Sherlock Holmes"
+    },
+    {
+      "id": 2,
+      "question": "Which planet in the Milky Way is the hottest?",
+      "answer": "Venus"
+    },
+    {
+      "id": 3,
+      "question": "What is the 4th letter of the Greek alphabet?",
+      "answer": "Delta"
+    },
+    {
+      "id": 4,
+      "question": "What sports car company manufactures the 911?",
+      "answer": "Porsche"
+    },
+    {
+      "id": 5,
+      "question": "Who discovered that the earth revolves around the sun? ",
+      "answer": "Copernicus"
+    }
+  ]
+}

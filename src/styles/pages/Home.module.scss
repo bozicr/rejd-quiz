@@ -1,0 +1,86 @@
+@import 'styles/variablesAndMixins';
+
+.pageWrapper {
+  background: $backgroundColor;
+  padding: 15px;
+  @include border-radius();
+
+  .tableInfoRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+
+    .logoText {
+      font-size: 35px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: auto;
+      color: $white;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .tableButtons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: right;
+      flex-grow: 1;
+
+      .link {
+        @include mini-tablet {
+          width: 100%;
+        }
+      }
+
+      .select {
+        background: $primaryColor;
+        height: $fieldHeight;
+        min-width: $minFieldWidth;
+        border: none;
+        padding: 0 10px;
+        font-weight: 500;
+        @include border-radius();
+        @include outline-none;
+
+        @include mini-tablet {
+          width: 100%;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        option {
+          background: white;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    @include flex-center;
+
+    li {
+      &:hover {
+        cursor: pointer;
+      }
+      a {
+        padding: 20px;
+      }
+    }
+
+    .active {
+      color: $white;
+    }
+  }
+}

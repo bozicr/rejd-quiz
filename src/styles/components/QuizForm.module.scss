@@ -1,0 +1,66 @@
+@import 'src/styles/variablesAndMixins';
+
+.wrapper {
+  background: $backgroundColor;
+  padding: 20px;
+  @include border-radius();
+
+  .backButton {
+    background: transparent;
+    border: unset;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+    padding-bottom: 20px;
+    font-weight: 500;
+
+    input {
+      height: $fieldHeight;
+      border: unset;
+      width: 100%;
+      @include border-radius();
+      @include outline-none;
+      padding: 0 10px;
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    padding: 0;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .quizQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid $blue;
+    padding: 5px;
+    margin-bottom: 20px;
+    @include border-radius();
+
+    .questionButtons {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      min-width: 30px;
+    }
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+}

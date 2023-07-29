@@ -1,0 +1,23 @@
+@import 'styles/variablesAndMixins.scss';
+
+body {
+  max-width: 1440px;
+  margin: auto !important;
+  padding: $bodyPadding;
+  min-height: 100vh;
+  background: $bodyBackground !important;
+
+  @include mini-tablet {
+    padding: 5px;
+  }
+}
+
+button,
+body,
+select {
+  font-family: $poppins;
+}
+
+a {
+  text-decoration: none !important;
+}

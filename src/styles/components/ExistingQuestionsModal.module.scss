@@ -1,0 +1,55 @@
+@import 'src/styles/variablesAndMixins';
+
+.question {
+  position: relative;
+  border: 2px solid $blue;
+  margin-bottom: 10px;
+  padding: 7px;
+  @include border-radius();
+
+  &:hover {
+    cursor: pointer;
+    background: $blue;
+  }
+
+  &:active {
+    background: $backgroundColor;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $blue;
+  margin: 20px 18px;
+  padding: 5px;
+
+  @include border-radius();
+
+  button {
+    border: unset;
+    background: $white;
+    background: $blue;
+  }
+
+  input {
+    background: $blue;
+    width: 100%;
+    height: $fieldHeight;
+    border: unset;
+    color: $white;
+    @include outline-none;
+  }
+}
+
+.error {
+  font-size: 20px;
+  color: $white;
+  background: red;
+  display: flex;
+  justify-content: center;
+  margin: 5px 18px;
+  padding: 5px;
+  @include border-radius();
+}

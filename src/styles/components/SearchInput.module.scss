@@ -1,0 +1,30 @@
+@import 'styles/variablesAndMixins';
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  height: $fieldHeight;
+  min-width: 220px;
+  background: $white;
+  padding: 0 10px;
+  flex-grow: 1;
+  @include border-radius();
+
+  .inputField {
+    background: $white;
+    border: none;
+    width: 100%;
+    @include outline-none;
+  }
+
+  .icoWrapper {
+    height: $fieldHeight;
+    padding: 5px;
+    @include flex-center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

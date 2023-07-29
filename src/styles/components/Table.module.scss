@@ -1,0 +1,98 @@
+@import 'styles/variablesAndMixins';
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    tr {
+      th {
+        background: $white;
+        border: none;
+        padding: 7px 10px;
+
+        .tableHeaderWrapper {
+          display: flex;
+          align-items: center;
+          justify-content: left;
+          gap: 5px;
+
+          svg {
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .sortButton {
+            background: transparent;
+            border: unset;
+            @include flex-center;
+          }
+        }
+
+        &:first-child {
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: start;
+        }
+
+        &:last-child {
+          display: flex;
+          justify-content: right;
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: $blue;
+        cursor: pointer;
+      }
+
+      td {
+        text-align: left;
+        padding: 7px 10px;
+
+        &:hover {
+          cursor: default;
+        }
+
+        &:first-child {
+          text-align: left;
+        }
+
+        &:last-child {
+          display: flex;
+          align-items: center;
+          justify-content: right;
+        }
+
+        .actionButton {
+          border: none;
+          background: transparent;
+          width: fit-content;
+          padding: unset;
+          margin: 0 5px;
+          @include flex-center;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .messageTr {
+      &:hover {
+        background-color: transparent !important;
+        cursor: pointer;
+      }
+    }
+  }
+}

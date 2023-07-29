@@ -1,0 +1,47 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+$poppins: 'Poppins', sans-serif;
+
+// Color variables
+$primaryColor: #ffbf00;
+$white: #ffffff;
+$black: #000000;
+$backgroundColor: #d9d9d9;
+$blue: #5f9ea0;
+$bodyBackground: #393e46;
+$neonGreen: #80ff66;
+
+// Size variables
+$fieldHeight: 35px;
+$minFieldWidth: 140px;
+$bodyPadding: 20px;
+
+// Mixins
+@mixin border-radius($radius: 6px) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow {
+  -webkit-box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+@mixin outline-none {
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Resolution mixins
+@mixin mini-tablet {
+  @media only screen and (max-width: 700px) {
+    @content;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../variablesAndMixins';
+
+.primaryButton {
+  gap: 10px;
+  background-color: $primaryColor;
+  padding: 10px;
+  border: none;
+  min-width: $minFieldWidth;
+  height: $fieldHeight;
+  font-weight: 500;
+  white-space: nowrap;
+  @include border-radius();
+  @include flex-center;
+
+  @include mini-tablet {
+    width: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
